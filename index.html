@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-glyphs/30/000000/square-brackets.png">
+    <title>BlackJack</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="logo">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ad0fa87e-0fa4-4b6e-b1c3-e31271c25be2/d6ibf1c-07d45329-f934-420e-9242-e5c5c6e285d7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FkMGZhODdlLTBmYTQtNGI2ZS1iMWMzLWUzMTI3MWMyNWJlMlwvZDZpYmYxYy0wN2Q0NTMyOS1mOTM0LTQyMGUtOTI0Mi1lNWM1YzZlMjg1ZDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pEd9a8eOIgalOd2J4UiHE-u7V2GesxdgLedlx9OjrRE"
+                alt="">
+        </div>
+        <!-- <div class="basic">
+            <h2>Basic Blackjack Rules:</h2>
+            <ul>
+                <li>The goal of blackjack is to beat the dealer's hand without going over 21.</li>
+                <li>Face cards are worth 10. Aces are worth 1 or 11, whichever makes a better hand.</li>
+                <li>To 'Hit' is to ask for card. To 'Stand' is to hold your total and end your turn.</li>
+                <li>If you go over 21 you bust, and the dealer wins regardless of the dealer's hand.</li>
+                <li>If you are dealt 21 from the start (Ace & 10), you got a blackjack.</li>
+            </ul>
+        </div> -->
+        <div class="start">
+            <button class="start-btn" onclick="startGame()">Start Game</button>
+        </div>
+        <div class="contents row">
+            <div class="player col">
+                <h1 class="user">Lucifer</h1>
+                <h3 id="hitResult"></h3>
+                <h1 id="point"></h1>
+            </div>
+            <div class="bot col">
+                <h1 class="bot">Dealer</h1>
+                <h3 id="botResult"></h3>
+            </div>
+            <div class="btns">
+                <button class="btns-play" onclick="hit()">Hit</button>
+                <span class="space"></span>
+                <button class="btns-play" onclick="botCard()">Stand</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
