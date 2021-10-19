@@ -104,6 +104,7 @@ body{
 
 .btns-play {
   padding: 0.6em 2em;
+  margin: 10px;
   border: none;
   outline: none;
   color: #111;
@@ -185,6 +186,45 @@ body{
     padding-right: 10px;
 }
 
+.black-jack{
+  color: green;
+  background-color: #fff;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result{
+  background-color: #fff;
+  opacity: 0.8;
+  color: #111;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result-table{
+  padding-top: 20px;
+}
+ 
+.result-table table{ 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.userCardImg img,.botCardImg img{
+  width: 100px;
+  height: 110px;
+  max-width: 100px;
+  max-height: 110px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+table, th, tr, td  {
+  border: 1px solid #fff;
+  padding: 15px;
+  text-align: center;
+}
 
 @media (max-width: 480px) {
     .basic li{
